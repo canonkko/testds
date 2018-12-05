@@ -1,0 +1,49 @@
+// FONTS
+
+// BOLD
+@font-face {
+	font-family: "helveticaneue";
+	src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+}
+@font-face {
+	font-family: "helveticaneue";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+}
+
+// LIGHT
+@font-face {
+	font-family: "helveticaneue";
+	src: url("../fonts/HelveticaNeueCyr-Light.eot");
+}
+@font-face {
+	font-family: "helveticaneue";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+}
+
+// ROMAN
+@font-face {
+	font-family: "helveticaneue";
+	src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+}
+@font-face {
+	font-family: "helveticaneue";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+}
+
+// Open Sans Regular
+@font-face {
+	font-family: "Opensans";
+	src: url("../fonts/OpenSans-Regular.eot");
+}
+@font-face {
+	font-family: "Opensans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}

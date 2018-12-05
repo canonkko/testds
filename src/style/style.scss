@@ -1,0 +1,115 @@
+@import "constants";
+
+@import "reset";
+@import "fonts";
+
+@import "mixins";
+@import "sprite";
+
+//@import "libs/_vendor"; // - подключение всех стилей bower компонентов "как есть". Часто - не требуется
+@import "../../node_modules/rfs/scss/_rfs";
+@import "../../node_modules/fancyapps/fancybox/dist/jquery.fancybox.min";
+@import "../../node_modules/swiper/dist/css/swiper.min";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "helveticaneue", sans-serif;
+
+  min-width: 300px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1054px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: "helveticaneue", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: $red-color;
+  display: inline-block;
+  text-align: center;
+  padding: 9px 22px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($red-color,7%);
+  }
+
+  &_hero {
+    background-color: $orange-color;
+    @include rfs(23);
+    text-transform: uppercase;
+    padding: 0.9em 1.9em;
+    border-radius: 7px;
+  }
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-weight: 700;
+  @include rfs(48);
+  line-height: 1.15;
+  color: #fff;
+  span {
+    font-weight: 300;
+    @include rfs(30);
+    display: block;
+  }
+}
+
+.h2 {
+  font-weight: 700;
+  @include rfs(36);
+  line-height: 1.2;
+  text-align: center;
+
+  &::after {
+    content: '';
+    background-color: $text-color;
+    width: 47px;
+    height: 5px;
+    display: block;
+    margin: 12px auto 45px;
+  }
+
+  &_white {
+    color: #fff;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  span {
+    font-weight: 300;
+    @include rfs(20);
+    display: block;
+  }
+}
+
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/approch";
+@import "sections/works";
+@import "sections/order";
+@import "sections/footer";
+@import "sections/media";

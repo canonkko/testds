@@ -1,0 +1,138 @@
+extends ./layout/layout
+
+block variables
+    - var page_title = 'Главная';
+
+block content
+
+    section.hero
+      .hero__slider.swiper-container
+        .swiper-wrapper
+          .hero__slide.swiper-slide(style="background-image: url(../img/hero_img_1.jpg)")
+            .hero__slide-inner
+              h1 We Providing
+                span Social Media marketing for businesses
+                .hero__btn
+                  a.btn.btn_hero(data-fancybox data-src="#popup" href="javascript:;") Free consultation
+          .hero__slide.swiper-slide(style="background-image: url(../img/hero_img_1.jpg)")
+            .hero__slide-inner
+              h1 We Providing 2
+                span Social Media marketing for businesses
+                .hero__btn
+                  a.btn.btn_hero(data-fancybox data-src="#popup" href="javascript:;") Free consultation
+          .hero__slide.swiper-slide(style="background-image: url(../img/hero_img_1.jpg)")
+            .hero__slide-inner
+              h1 We Providing 3
+                span Social Media marketing for businesses
+                .hero__btn
+                  a.btn.btn_hero(data-fancybox data-src="#popup" href="javascript:;") Free consultation
+        .swiper-button-prev
+        .swiper-button-next
+
+    section.about
+      .container
+        h2.h2 About Us
+          span We are added our major Services
+        .row
+          .about__item
+            img(src="../img/about_icon_1.png" alt="")
+            h3.about__title Facebook Marketing
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever
+          .about__item
+            img(src="../img/about_icon_2.png" alt="")
+            h3.about__title landing pages Creation
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever
+          .about__item
+            img(src="../img/about_icon_3.png" alt="")
+            h3.about__title Ads management
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text ever
+            
+    section.approch
+      .container
+        h2.h2 Our Approch
+          span Check Our approches step by step ( how we do it )
+        ul.approch__list
+          li.approch__item
+            .approch__pic(style="background-image: url(../img/approch_img_1.jpg)")
+            .approch__desc
+              h4.approch__title Step 1 : Heading Here
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              .approch__step 
+                span.approch__number 1
+                | step
+          li.approch__item
+            .approch__pic(style="background-image: url(../img/approch_img_2.jpg)")
+            .approch__desc
+              h4.approch__title Step 2 : Heading Here
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              .approch__step 
+                span.approch__number 2
+                | step
+          li.approch__item
+            .approch__pic(style="background-image: url(../img/approch_img_3.jpg)")
+            .approch__desc
+              h4.approch__title Step 3 : Heading Here
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              .approch__step 
+                span.approch__number 3
+                | step
+          li.approch__item
+            .approch__pic(style="background-image: url(../img/approch_img_4.jpg)")
+            .approch__desc
+              h4.approch__title Step 4 : Heading Here
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+              .approch__step 
+                span.approch__number 4
+                | step
+    
+    
+    section.works
+      .container
+        h2.h2.h2_white Our Work
+          span We are added our featured works below
+        .row
+          .works__item
+            .works__inner
+              i.fab.fa-telegram-plane
+              h3.works__name Project Name
+              span.works__desc Facebook marketing
+          .works__item(style="background-image: url(../img/work_1.jpg)")
+          .works__item
+            .works__inner
+              i.fab.fa-telegram-plane
+              h3.works__name Project Name
+              span.works__desc Facebook marketing
+          .works__item(style="background-image: url(../img/work_2.jpg)")
+          .works__item(style="background-image: url(../img/work_3.jpg)")
+          .works__item
+            .works__inner
+              i.fab.fa-telegram-plane
+              h3.works__name Project Name
+              span.works__desc Facebook marketing
+          .works__item(style="background-image: url(../img/work_4.jpg)")
+          .works__item
+            .works__inner
+              i.fab.fa-telegram-plane
+              h3.works__name Project Name
+              span.works__desc Facebook marketing
+              
+              
+    section.order
+      .container
+        h2.h2.h2_white Get Your Free Facebook Analysis Now
+          span Enter your details below
+        a.order-arrow.js-form__arrow(href="#0")
+        .slide-box
+          .form-wrap
+            a.form__close.js-form__close(href="#0")
+              img(src="../img/close.png" alt="")
+            form.form#form(action="mail.php")
+              p.form__text Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
+              input(type="text" style="display:none")
+              .form-group
+                input.form__input(type="text" name="name" placeholder="Your Name")
+              .form-group
+                input.form__input(type="tel" name="number" placeholder="Contact Number")
+              .form-group
+                input.form__input(type="text" name="companyname" placeholder="Company Name")
+              button.btn Submit now

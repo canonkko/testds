@@ -1,0 +1,21 @@
+.about {
+  text-align: center;
+  padding: 5% 0 6%;
+
+  &__item {
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px;
+    p {
+      font-family: "Opensans", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 250px;
+      display: inline-block;
+    }
+  }
+
+  &__title {
+    @include rfs(22);
+    margin: 12px 0;
+  }
+}

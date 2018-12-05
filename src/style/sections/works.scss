@@ -1,0 +1,32 @@
+.works {
+  padding: 5.5% 0 6.4%;
+  background-color: $red-color;
+
+  &__item {
+    background-color: #f35e59;
+    text-align: center;
+    color: #fff;
+    width: 25%;
+    min-height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    .fab {
+      font-size: 36px;
+      opacity: 0.5;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    @include rfs(26);
+  }
+
+  &__desc {
+    font-weight: 700;
+  }
+}

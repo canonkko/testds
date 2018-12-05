@@ -1,0 +1,137 @@
+.header {
+
+  &__top {
+    background-color: #f0f2f4;
+    box-shadow: 0px 1px 0px 0px #e2e2e2;
+
+    .row {
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  &__email {
+    padding: 9px 20px;
+    border-left: 1px solid #e2e2e2;
+    margin-left: 20px;
+  }
+
+  &__bottom {
+    padding: 40px 0;
+
+    .row {
+      align-items: center;
+    }
+
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 32px;
+  }
+
+  &__btn {
+
+  }
+}
+
+.phone, .email {
+  font-size: 15px;
+  font-weight: 400;
+  .fas {
+    margin-right: 10px;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link {
+    color: $text-color;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}
+
+.email {
+  .fas {
+    font-size: 24px;
+  }
+}
+
+.social-fb {
+  border-radius: 3px;
+  background-color: $blue-color;
+  width: 26px;
+  height: 26px;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  .fab {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: darken($blue-color,10%);
+  }
+}
+
+.logo {
+  display: flex;
+  .fas {
+    color: $red-color;
+    font-size: 54px;
+    margin-right: 10px;
+  }
+  &__desc {
+    @include rfs(37);
+    font-weight: 700;
+    line-height: 1;
+    span {
+      font-size: 15px;
+      font-weight: 400;
+      display: block;
+    }
+  }
+}
+
+.nav-menu {
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+
+  &__item {
+
+    &.active {
+      .nav-menu__link {
+        color: $red-color;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-color: $text-color;
+      width: 5px;
+      height: 5px;
+      margin: 0 15px;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $text-color;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}

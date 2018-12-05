@@ -1,0 +1,41 @@
+mixin header()
+    header.header
+      .header__top
+        .container
+          .row
+            .header__phone
+              .phone
+                i.fas.fa-mobile-alt
+                a.phone__link(href="tel:63373128") 6337 3128
+            .header__email
+              .email
+                i.fas.fa-envelope
+                a.email__link(href="mailto:info@business.co") info@business.co
+            .header__fb
+              a.social-fb(href="#0")
+                i.fab.fa-facebook-f
+      .header__bottom
+        .container
+          .row
+            .header__logo
+              .logo
+                i.fas.fa-graduation-cap
+                .logo__desc
+                  p
+                    | Business
+                    span Tagline goes here
+            .header__menu
+              nav.nav
+                ul.nav-menu
+                  li.nav-menu__item.active
+                    a.nav-menu__link(href="#0") Home
+                  li.nav-menu__item
+                    a.nav-menu__link(href="#0") About Us
+                  li.nav-menu__item
+                    a.nav-menu__link(href="#0") Our Approch
+                  li.nav-menu__item
+                    a.nav-menu__link(href="#0") Our Work
+            .header__btn
+              a.btn(data-fancybox data-src="#popup" href="javascript:;") Free Consultation
+              
+                

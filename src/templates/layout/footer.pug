@@ -1,0 +1,41 @@
+mixin footer()
+  .prefooter
+    .container
+      h2.h2 Get in touch
+      ul.socials
+        li.socials__item
+          a.socials__link(href="#0")
+            i.fab.fa-facebook-f
+        li.socials__item
+          a.socials__link(href="#0")
+            i.fab.fa-twitter
+        li.socials__item
+          a.socials__link(href="#0")
+            i.fab.fa-google-plus-g
+        li.socials__item
+          a.socials__link(href="#0")
+            i.fab.fa-linkedin-in
+      .prefooter__text-row
+        p.prefooter__text Subscribe to our newsletter to stay update with what is new
+      form.form.form_prefooter(action="")
+        input.form__input(type="email" name="email" placeholder="Email Address" required)
+        button.btn Subscribe
+
+  footer.footer Cssauthor.com © 2014 All Rights Reserved
+  
+  .popup#popup
+    form.form
+      p.form__text Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
+      input.form__input(type="text" name="name" placeholder="Your Name")
+      input.form__input(type="tel" name="number" placeholder="Contact Number")
+      input.form__input(type="text" name="companyname" placeholder="Company Name")
+      button.btn Submit now
+  
+      -   if (scripts && scripts.length)
+          for script in scripts
+              script(src= script)
+
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js')
+      script(src='../js/_main.js')
